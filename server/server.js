@@ -1,9 +1,10 @@
 const express = require('express');
 const {Web3} = require("web3");
 const ABI = require("./ABI.json");
-
+const cors = require("cors")
 const app = express() ;
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 // app.listen(3000,()=>{
 //     console.log('server is running')
 // })
